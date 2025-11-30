@@ -1,0 +1,256 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\isaac\\source\\repos\\Laboratorio20\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3F4BB05E-CAED-4D2D-99A4-1648D6850635}|..\\Laboratorio203\\Laboratorio203.csproj|c:\\users\\isaac\\source\\repos\\laboratorio203\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F4BB05E-CAED-4D2D-99A4-1648D6850635}|..\\Laboratorio203\\Laboratorio203.csproj|c:\\users\\isaac\\source\\repos\\laboratorio203\\default.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F4BB05E-CAED-4D2D-99A4-1648D6850635}|..\\Laboratorio203\\Laboratorio203.csproj|c:\\users\\isaac\\source\\repos\\laboratorio203\\contact.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F4BB05E-CAED-4D2D-99A4-1648D6850635}|..\\Laboratorio203\\Laboratorio203.csproj|c:\\users\\isaac\\source\\repos\\laboratorio203\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF80C91F-B11F-477E-AF7D-04531CDEA2C6}|Laboratorio20.csproj|c:\\users\\isaac\\source\\repos\\laboratorio20\\packages\\microsoft.aspnet.friendlyurls.1.0.2\\content\\site.mobile.master.pp||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EF80C91F-B11F-477E-AF7D-04531CDEA2C6}|Laboratorio20.csproj|solutionrelative:packages\\microsoft.aspnet.friendlyurls.1.0.2\\content\\site.mobile.master.pp||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF80C91F-B11F-477E-AF7D-04531CDEA2C6}|Laboratorio20.csproj|c:\\users\\isaac\\source\\repos\\laboratorio20\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF80C91F-B11F-477E-AF7D-04531CDEA2C6}|Laboratorio20.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DD2FEC7-D2E7-42B6-9129-A26FBC3F3CAC}|..\\Laboratorio202\\Laboratorio202.csproj|c:\\users\\isaac\\source\\repos\\laboratorio202\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DD2FEC7-D2E7-42B6-9129-A26FBC3F3CAC}|..\\Laboratorio202\\Laboratorio202.csproj|c:\\users\\isaac\\source\\repos\\laboratorio202\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF80C91F-B11F-477E-AF7D-04531CDEA2C6}|Laboratorio20.csproj|c:\\users\\isaac\\source\\repos\\laboratorio20\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF80C91F-B11F-477E-AF7D-04531CDEA2C6}|Laboratorio20.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF80C91F-B11F-477E-AF7D-04531CDEA2C6}|Laboratorio20.csproj|c:\\users\\isaac\\source\\repos\\laboratorio20\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF80C91F-B11F-477E-AF7D-04531CDEA2C6}|Laboratorio20.csproj|solutionrelative:pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF80C91F-B11F-477E-AF7D-04531CDEA2C6}|Laboratorio20.csproj|c:\\users\\isaac\\source\\repos\\laboratorio20\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF80C91F-B11F-477E-AF7D-04531CDEA2C6}|Laboratorio20.csproj|solutionrelative:pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF80C91F-B11F-477E-AF7D-04531CDEA2C6}|Laboratorio20.csproj|c:\\users\\isaac\\source\\repos\\laboratorio20\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF80C91F-B11F-477E-AF7D-04531CDEA2C6}|Laboratorio20.csproj|solutionrelative:pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF80C91F-B11F-477E-AF7D-04531CDEA2C6}|Laboratorio20.csproj|c:\\users\\isaac\\source\\repos\\laboratorio20\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF80C91F-B11F-477E-AF7D-04531CDEA2C6}|Laboratorio20.csproj|solutionrelative:pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF80C91F-B11F-477E-AF7D-04531CDEA2C6}|Laboratorio20.csproj|c:\\users\\isaac\\source\\repos\\laboratorio20\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF80C91F-B11F-477E-AF7D-04531CDEA2C6}|Laboratorio20.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Contact.aspx",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Laboratorio203\\Contact.aspx",
+              "RelativeDocumentMoniker": "..\\Laboratorio203\\Contact.aspx",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Laboratorio203\\Contact.aspx",
+              "RelativeToolTip": "..\\Laboratorio203\\Contact.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-25T17:22:28.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Default.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Laboratorio203\\Default.aspx.cs",
+              "RelativeDocumentMoniker": "..\\Laboratorio203\\Default.aspx.cs",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Laboratorio203\\Default.aspx.cs",
+              "RelativeToolTip": "..\\Laboratorio203\\Default.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T17:16:03.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Laboratorio203\\Default.aspx",
+              "RelativeDocumentMoniker": "..\\Laboratorio203\\Default.aspx",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Laboratorio203\\Default.aspx",
+              "RelativeToolTip": "..\\Laboratorio203\\Default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-25T17:13:42.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Default.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Laboratorio203\\Default.aspx.designer.cs",
+              "RelativeDocumentMoniker": "..\\Laboratorio203\\Default.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Laboratorio203\\Default.aspx.designer.cs",
+              "RelativeToolTip": "..\\Laboratorio203\\Default.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T17:13:43.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Site.Mobile.Master.pp",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Laboratorio20\\packages\\Microsoft.AspNet.FriendlyUrls.1.0.2\\Content\\Site.Mobile.Master.pp",
+              "RelativeDocumentMoniker": "packages\\Microsoft.AspNet.FriendlyUrls.1.0.2\\Content\\Site.Mobile.Master.pp",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Laboratorio20\\packages\\Microsoft.AspNet.FriendlyUrls.1.0.2\\Content\\Site.Mobile.Master.pp",
+              "RelativeToolTip": "packages\\Microsoft.AspNet.FriendlyUrls.1.0.2\\Content\\Site.Mobile.Master.pp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-25T17:05:23.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WebForm1.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Laboratorio202\\WebForm1.aspx.cs",
+              "RelativeDocumentMoniker": "..\\Laboratorio202\\WebForm1.aspx.cs",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Laboratorio202\\WebForm1.aspx.cs",
+              "RelativeToolTip": "..\\Laboratorio202\\WebForm1.aspx.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T15:33:05.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WebForm1.aspx",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Laboratorio202\\WebForm1.aspx",
+              "RelativeDocumentMoniker": "..\\Laboratorio202\\WebForm1.aspx",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Laboratorio202\\WebForm1.aspx",
+              "RelativeToolTip": "..\\Laboratorio202\\WebForm1.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-25T15:28:02.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Laboratorio20\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Laboratorio20\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T15:01:19.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Laboratorio20\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Laboratorio20\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "Pages\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-25T14:42:05.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Laboratorio20\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Error.cshtml",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Laboratorio20\\Pages\\Error.cshtml",
+              "RelativeToolTip": "Pages\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-25T14:42:02.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Laboratorio20\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Laboratorio20\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-25T14:42:01.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Laboratorio20\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Laboratorio20\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-25T14:27:10.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Laboratorio20\\Pages\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Laboratorio20\\Pages\\Privacy.cshtml",
+              "RelativeToolTip": "Pages\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-25T14:27:09.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Laboratorio20\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Laboratorio20\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T14:26:25.125Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
