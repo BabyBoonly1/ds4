@@ -1,0 +1,657 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NuGet.LibraryModel</name>
+    </assembly>
+    <members>
+        <member name="P:NuGet.LibraryModel.CentralPackageVersionNameComparer.Default">
+            <summary>
+            Returns a singleton instance for the <see cref="T:NuGet.LibraryModel.CentralPackageVersionNameComparer" />.
+            </summary>
+        </member>
+        <member name="M:NuGet.LibraryModel.CentralPackageVersionNameComparer.#ctor">
+            <summary>
+            Get a singleton instance only through the <see cref="P:NuGet.LibraryModel.CentralPackageVersionNameComparer.Default" />.
+            </summary>
+        </member>
+        <member name="T:NuGet.LibraryModel.DownloadDependency">
+            <remarks>
+            Immutable.
+            </remarks>
+        </member>
+        <member name="M:NuGet.LibraryModel.FrameworkDependencyFlagsUtils.GetFlags(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Convert set of flag strings into a FrameworkDependencyFlags.
+            </summary>
+            <param name="values">A list of values to generate the flags out of</param>
+        </member>
+        <member name="M:NuGet.LibraryModel.FrameworkDependencyFlagsUtils.GetFlagString(NuGet.LibraryModel.FrameworkDependencyFlags)">
+            <summary>
+            Convert framework dependency flags to a friendly string.
+            </summary>
+        </member>
+        <member name="M:NuGet.LibraryModel.FrameworkDependencyFlagsUtils.GetFlags(System.String)">
+            <summary>
+            Convert set of flag strings into a LibraryIncludeFlags.
+            If the <paramref name="flags" /> is null, it returns the default value of <see cref="F:NuGet.LibraryModel.FrameworkDependencyFlags.None" />
+            </summary>
+        </member>
+        <member name="P:NuGet.LibraryModel.LibraryDependency.AutoReferenced">
+            <summary>
+            True if the PackageReference is added by the SDK and not the user.
+            </summary>
+        </member>
+        <member name="P:NuGet.LibraryModel.LibraryDependency.VersionCentrallyManaged">
+            <summary>
+            True if the dependency has the version set through CentralPackageVersionManagement file.
+            </summary>
+        </member>
+        <member name="P:NuGet.LibraryModel.LibraryDependency.ReferenceType">
+            <summary>
+            Information regarding if the dependency is direct or transitive.
+            </summary>
+        </member>
+        <member name="P:NuGet.LibraryModel.LibraryDependency.VersionOverride">
+            <summary>
+            Gets or sets a value indicating a version override for any centrally defined version.
+            </summary>
+        </member>
+        <member name="M:NuGet.LibraryModel.LibraryDependency.#ctor">
+            <summary>Initializes a new instance of the LibraryDependency class.</summary>
+            <remarks>Required properties must be set when using this constructor.</remarks>
+        </member>
+        <member name="M:NuGet.LibraryModel.LibraryDependency.#ctor(NuGet.LibraryModel.LibraryRange)">
+            <summary>Initializes a new instance of the LibraryDependency class.</summary>
+            <param name="libraryRange">The <see cref="T:NuGet.LibraryModel.LibraryRange" /> to use with the new instance.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="libraryRange" /> is <see langword="null" /></exception>
+        </member>
+        <member name="P:NuGet.LibraryModel.LibraryDependencyInfo.Resolved">
+            <summary>
+            False if the package could not be found.
+            </summary>
+        </member>
+        <member name="P:NuGet.LibraryModel.LibraryDependencyInfo.Library">
+            <summary>
+            Original library identity from the nuspec.
+            This contains the original casing for the id/version.
+            </summary>
+        </member>
+        <member name="P:NuGet.LibraryModel.LibraryDependencyInfo.Dependencies">
+            <summary>
+            Dependencies
+            </summary>
+        </member>
+        <member name="P:NuGet.LibraryModel.LibraryDependencyInfo.Framework">
+            <summary>
+            Target framework used to select the dependencies.
+            </summary>
+        </member>
+        <member name="M:NuGet.LibraryModel.LibraryDependencyInfo.CreateUnresolved(NuGet.LibraryModel.LibraryIdentity,NuGet.Frameworks.NuGetFramework)">
+            <summary>
+            Unresolved
+            </summary>
+        </member>
+        <member name="M:NuGet.LibraryModel.LibraryDependencyInfo.Create(NuGet.LibraryModel.LibraryIdentity,NuGet.Frameworks.NuGetFramework,System.Collections.Generic.IEnumerable{NuGet.LibraryModel.LibraryDependency})">
+            <summary>
+            Resolved
+            </summary>
+        </member>
+        <member name="F:NuGet.LibraryModel.LibraryDependencyTarget.PackageProjectExternal">
+            <summary>
+            A package, project, or external project
+            </summary>
+        </member>
+        <member name="T:NuGet.LibraryModel.LibraryDependencyTargetUtils">
+            <summary>
+            Helper methods for dealing with LibraryDependencyTarget strings.
+            </summary>
+        </member>
+        <member name="M:NuGet.LibraryModel.LibraryDependencyTargetUtils.Parse(System.String)">
+            <summary>
+            Convert flag string into a LibraryTypeFlag.
+            </summary>
+        </member>
+        <member name="M:NuGet.LibraryModel.LibraryDependencyTargetUtils.GetFlagString(NuGet.LibraryModel.LibraryDependencyTarget)">
+            <summary>
+            Convert type flags to a friendly string.
+            </summary>
+        </member>
+        <member name="M:NuGet.LibraryModel.LibraryDependencyTargetUtils.AsString(NuGet.LibraryModel.LibraryDependencyTarget)">
+            <summary>
+            Efficiently converts <see cref="T:NuGet.LibraryModel.LibraryDependencyTarget" /> to it's <see cref="T:System.String" /> representation.
+            </summary>
+            <param name="includeFlags">The <see cref="T:NuGet.LibraryModel.LibraryDependencyTarget" /> instance to get the <see cref="T:System.String" /> representation for.</param>
+            <returns>The <see cref="T:System.String" /> representation of <paramref name="includeFlags" />.</returns>
+        </member>
+        <member name="T:NuGet.LibraryModel.LibraryIncludeFlagUtils">
+            <summary>
+            Helper methods for dealing with include/exclude flag strings.
+            </summary>
+        </member>
+        <member name="F:NuGet.LibraryModel.LibraryIncludeFlagUtils.DefaultSuppressParent">
+            <summary>
+            By default build, contentFiles, and analyzers do not flow transitively between projects.
+            </summary>
+        </member>
+        <member name="M:NuGet.LibraryModel.LibraryIncludeFlagUtils.GetFlags(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Convert set of flag strings into a LibraryIncludeFlags.
+            </summary>
+        </member>
+        <member name="M:NuGet.LibraryModel.LibraryIncludeFlagUtils.GetFlagString(NuGet.LibraryModel.LibraryIncludeFlags)">
+            <summary>
+            Convert library flags to a friendly string.
+            </summary>
+        </member>
+        <member name="M:NuGet.LibraryModel.LibraryIncludeFlagUtils.GetFlags(System.String,NuGet.LibraryModel.LibraryIncludeFlags)">
+            <summary>
+            Convert set of flag strings into a LibraryIncludeFlags.
+            </summary>
+        </member>
+        <member name="M:NuGet.LibraryModel.LibraryIncludeFlagUtils.AsString(NuGet.LibraryModel.LibraryIncludeFlags)">
+            <summary>
+            Efficiently converts <see cref="T:NuGet.LibraryModel.LibraryIncludeFlags" /> to it's <see cref="T:System.String" /> representation.
+            </summary>
+            <param name="includeFlags">The <see cref="T:NuGet.LibraryModel.LibraryIncludeFlags" /> instance to get the <see cref="T:System.String" /> representation for.</param>
+            <returns>The <see cref="T:System.String" /> representation of <paramref name="includeFlags" />.</returns>
+        </member>
+        <member name="M:NuGet.LibraryModel.LibraryRange.TypeConstraintAllows(NuGet.LibraryModel.LibraryDependencyTarget)">
+            <summary>
+            True if the type constraint allows the flag.
+            </summary>
+        </member>
+        <member name="M:NuGet.LibraryModel.LibraryRange.TypeConstraintAllowsAnyOf(NuGet.LibraryModel.LibraryDependencyTarget)">
+            <summary>
+            True if any flags are allowed by the constraint.
+            </summary>
+        </member>
+        <member name="F:NuGet.LibraryModel.LibraryType.Project">
+            <summary>
+            Indicates that the library comes from compiling an XRE-based Project
+            </summary>
+        </member>
+        <member name="F:NuGet.LibraryModel.LibraryType.ExternalProject">
+            <summary>
+            Indicates that the library comes from compiling an external project (such as an MSBuild-based project)
+            </summary>
+        </member>
+        <member name="F:NuGet.LibraryModel.LibraryType.Package">
+            <summary>
+            Indicates that the library comes from a NuGet Package
+            </summary>
+        </member>
+        <member name="F:NuGet.LibraryModel.LibraryType.Assembly">
+            <summary>
+            Indicates that the library comes from a stand-alone .NET Assembly
+            </summary>
+        </member>
+        <member name="F:NuGet.LibraryModel.LibraryType.Reference">
+            <summary>
+            Indicates that the library comes from a .NET Assembly in a globally-accessible
+            location such as the GAC or the Framework Reference Assemblies
+            </summary>
+        </member>
+        <member name="F:NuGet.LibraryModel.LibraryType.WinMD">
+            <summary>
+            Indicates that the library comes from a Windows Metadata Assembly (.winmd file)
+            </summary>
+        </member>
+        <member name="F:NuGet.LibraryModel.LibraryType.Unresolved">
+            <summary>
+            Indicates that the library could not be resolved
+            </summary>
+        </member>
+        <member name="T:NuGet.LibraryModel.PrunePackageReference">
+            <summary>
+            Represents a PrunePackageReference item.
+            </summary>
+        </member>
+        <member name="P:NuGet.LibraryModel.PrunePackageReference.Name">
+            <summary>
+            Package Id to be pruned
+            </summary>
+        </member>
+        <member name="P:NuGet.LibraryModel.PrunePackageReference.VersionRange">
+            <summary>
+            Version ranges to be pruned. Expected to be of (, MaxVersion] style.
+            </summary>
+        </member>
+        <member name="T:NuGet.LibraryModel.Strings">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:NuGet.LibraryModel.Strings.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:NuGet.LibraryModel.Strings.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:NuGet.LibraryModel.Strings.Error_PrunePackageReferenceMissingVersion">
+            <summary>
+              Looks up a localized string similar to PrunePackageReference is missing a version: {0}..
+            </summary>
+        </member>
+        <member name="M:NuGet.Shared.EqualityUtility.OrderedEquals``2(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1},System.Collections.Generic.IEqualityComparer{``0})">
+            <summary>
+            Compares two enumerables for equality, ordered according to the specified key and optional comparer. Handles null values gracefully.
+            </summary>
+            <typeparam name="TSource">The type of the list</typeparam>
+            <typeparam name="TKey">The type of the sorting key</typeparam>
+            <param name="self">This list</param>
+            <param name="other">The other list</param>
+            <param name="keySelector">The function to extract the key from each item in the list</param>
+            <param name="orderComparer">An optional comparer for comparing keys</param>
+            <param name="sequenceComparer">An optional comparer for sequences</param>
+        </member>
+        <member name="M:NuGet.Shared.EqualityUtility.OrderedEquals``2(System.Collections.Generic.ICollection{``0},System.Collections.Generic.ICollection{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1},System.Collections.Generic.IEqualityComparer{``0})">
+            <summary>
+            Compares two collections for equality, ordered according to the specified key and optional comparer. Handles null values gracefully.
+            </summary>
+            <typeparam name="TSource">The type of the list</typeparam>
+            <typeparam name="TKey">The type of the sorting key</typeparam>
+            <param name="self">This list</param>
+            <param name="other">The other list</param>
+            <param name="keySelector">The function to extract the key from each item in the list</param>
+            <param name="orderComparer">An optional comparer for comparing keys</param>
+            <param name="sequenceComparer">An optional comparer for sequences</param>
+        </member>
+        <member name="M:NuGet.Shared.EqualityUtility.OrderedEquals``2(System.Collections.Generic.IList{``0},System.Collections.Generic.IList{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1},System.Collections.Generic.IEqualityComparer{``0})">
+            <summary>
+            Compares two lists for equality, ordered according to the specified key and optional comparer. Handles null values gracefully.
+            </summary>
+            <typeparam name="TSource">The type of the list</typeparam>
+            <typeparam name="TKey">The type of the sorting key</typeparam>
+            <param name="self">This list</param>
+            <param name="other">The other list</param>
+            <param name="keySelector">The function to extract the key from each item in the list</param>
+            <param name="orderComparer">An optional comparer for comparing keys</param>
+            <param name="sequenceComparer">An optional comparer for sequences</param>
+        </member>
+        <member name="M:NuGet.Shared.EqualityUtility.SequenceEqualWithNullCheck``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})">
+            <summary>
+            Compares two sequence for equality, allowing either sequence to be null. If one is null, both have to be
+            null for equality.
+            </summary>
+        </member>
+        <member name="M:NuGet.Shared.EqualityUtility.SequenceEqualWithNullCheck``1(System.Collections.Generic.ICollection{``0},System.Collections.Generic.ICollection{``0},System.Collections.Generic.IEqualityComparer{``0})">
+            <summary>
+            Compares two collections for equality, allowing either collection to be null. If one is null, both have to be
+            null for equality.
+            </summary>
+        </member>
+        <member name="M:NuGet.Shared.EqualityUtility.SequenceEqualWithNullCheck``1(System.Collections.Generic.IList{``0},System.Collections.Generic.IList{``0},System.Collections.Generic.IEqualityComparer{``0})">
+            <summary>
+            Compares two lists for equality, allowing either list to be null. If one is null, both have to be
+            null for equality.
+            </summary>
+        </member>
+        <member name="M:NuGet.Shared.EqualityUtility.SetEqualsWithNullCheck``1(System.Collections.Generic.ISet{``0},System.Collections.Generic.ISet{``0},System.Collections.Generic.IEqualityComparer{``0})">
+            <summary>
+            Compares two sets for equality, allowing either sequence to be null.
+            If one is null, both have to be null for equality.
+            </summary>
+        </member>
+        <member name="M:NuGet.Shared.EqualityUtility.EqualsFalse(System.String)">
+            <summary>
+            Determines if the current string contains a value equal "false".  Leading and trailing whitespace are trimmed and the comparison is case-insensitive
+            </summary>
+            <param name="value">The string to compare.</param>
+            <returns><see langword="true" /> if the current string is equal to a value of "false", otherwise <see langword="false" />.</returns>
+        </member>
+        <member name="T:NuGet.Shared.HashCodeCombiner">
+            <summary>
+            Hash code creator, based on the original NuGet hash code combiner/ASP hash code combiner implementations
+            </summary>
+        </member>
+        <member name="M:NuGet.Shared.HashCodeCombiner.GetHashCode``2(``0,``1)">
+            <summary>
+            Create a unique hash code for the given set of items
+            </summary>
+        </member>
+        <member name="M:NuGet.Shared.HashCodeCombiner.GetHashCode``3(``0,``1,``2)">
+            <summary>
+            Create a unique hash code for the given set of items
+            </summary>
+        </member>
+        <member name="M:NuGet.NoAllocEnumerateExtensions.NoAllocEnumerate``1(System.Collections.Generic.IList{``0})">
+             <summary>
+             Avoids allocating an enumerator when enumerating an <see cref="T:System.Collections.Generic.IList`1" />.
+             </summary>
+             <remarks>
+             <para>
+             Returns a struct-based enumerator that avoids heap allocation during enumeration.
+             If the underlying type is <see cref="T:System.Collections.Generic.List`1" /> then this method will delegate to <see cref="T:System.Collections.Generic.List`1.Enumerator" />,
+             otherwise the collection's items are accessed by index via <see cref="T:System.Collections.Generic.IList`1" />'s indexer directly.
+             </para>
+             <para>
+             When using a struct-based enumerator, no heap allocation occurs during enumeration via <see langword="foreach" />.
+             This is in contrast to the interface-based enumerator <see cref="T:System.Collections.Generic.IEnumerator`1" /> which will
+             always be allocated on the heap.
+             </para>
+             </remarks>
+             <example>
+             <code>
+             <![CDATA[IList<string> list = ...;
+            
+             foreach (string item in list.NoAllocEnumerate())
+             {
+                 // ...
+             }]]>
+             </code>
+             </example>
+        </member>
+        <member name="T:NuGet.NoAllocEnumerateExtensions.OptimisticallyNonAllocatingListEnumerable`1">
+            <summary>
+            Provides a struct-based enumerator for use with <see cref="T:System.Collections.Generic.IList`1" />.
+            Do not use this type directly. Use <see cref="M:NuGet.NoAllocEnumerateExtensions.NoAllocEnumerate``1(System.Collections.Generic.IList{``0})" /> instead.
+            </summary>
+        </member>
+        <member name="T:NuGet.NoAllocEnumerateExtensions.OptimisticallyNonAllocatingListEnumerable`1.Enumerator">
+            <summary>
+            A struct-based enumerator for use with <see cref="T:System.Collections.Generic.IList`1" />.
+            Do not use this type directly. Use <see cref="M:NuGet.NoAllocEnumerateExtensions.NoAllocEnumerate``1(System.Collections.Generic.IList{``0})" /> instead.
+            </summary>
+        </member>
+        <member name="M:NuGet.NoAllocEnumerateExtensions.NoAllocEnumerate``1(System.Collections.Generic.IEnumerable{``0})">
+             <summary>
+             Avoids allocating an enumerator when enumerating an <see cref="T:System.Collections.Generic.IEnumerable`1" /> where the concrete type
+             has a well known struct enumerator, such as for <see cref="T:System.Collections.Generic.List`1" />, or when index-based access is possible via
+             <see cref="T:System.Collections.Generic.IList`1" />.
+             </summary>
+             <remarks>
+             <para>
+             Several collection types (e.g. <see cref="T:System.Collections.Generic.List`1" />) provide a struct-based enumerator type
+             (e.g. <see cref="T:System.Collections.Generic.List`1.Enumerator" />) which the compiler can use in <see langword="foreach" /> statements.
+             When using a struct-based enumerator, no heap allocation occurs during such enumeration.
+             This is in contrast to the interface-based enumerator <see cref="T:System.Collections.Generic.IEnumerator`1" /> which will
+             always be allocated on the heap.
+             </para>
+             <para>
+             This method returns a custom struct enumerator that will avoid any heap allocation if <paramref name="source" />
+             (which is declared via interface <see cref="T:System.Collections.Generic.IEnumerable`1" />) is actually of known concrete type that
+             provides its own struct enumerator. If so, it delegates to that type's enumerator without any boxing
+             or other heap allocation.
+             </para>
+             <para>
+             If <paramref name="source" /> is not of a known concrete type, the returned enumerator falls back to the
+             interface-based enumerator, which will be allocated on the heap. Benchmarking shows the overhead in
+             such cases is low enough to be within the measurement error, meaning this is an inexpensive optimization
+             that won't regress behavior and with low downside for cases where it cannot apply an optimization.
+             </para>
+             </remarks>
+             <example>
+             <code>
+             <![CDATA[IEnumerable<string> source = ...;
+            
+             foreach (string item in source.NoAllocEnumerate())
+             {
+                 // ...
+             }]]>
+             </code>
+             </example>
+        </member>
+        <member name="T:NuGet.NoAllocEnumerateExtensions.OptimisticallyNonAllocatingEnumerable`1">
+            <summary>
+            Provides a struct-based enumerator for use with <see cref="T:System.Collections.Generic.IEnumerable`1" />.
+            Do not use this type directly. Use <see cref="M:NuGet.NoAllocEnumerateExtensions.NoAllocEnumerate``1(System.Collections.Generic.IEnumerable{``0})" /> instead.
+            </summary>
+        </member>
+        <member name="T:NuGet.NoAllocEnumerateExtensions.OptimisticallyNonAllocatingEnumerable`1.Enumerator">
+            <summary>
+            A struct-based enumerator for use with <see cref="T:System.Collections.Generic.IEnumerable`1" />.
+            Do not use this type directly. Use <see cref="M:NuGet.NoAllocEnumerateExtensions.NoAllocEnumerate``1(System.Collections.Generic.IEnumerable{``0})" /> instead.
+            </summary>
+        </member>
+        <member name="M:NuGet.NoAllocEnumerateExtensions.NoAllocEnumerate``2(System.Collections.Generic.IDictionary{``0,``1})">
+             <summary>
+             Avoids allocating an enumerator when enumerating an <see cref="T:System.Collections.Generic.IDictionary`2" /> where the concrete type
+             has a well known struct enumerator, such as for <see cref="T:System.Collections.Generic.Dictionary`2" />.
+             </summary>
+             <remarks>
+             <para>
+             Several collection types (e.g. <see cref="T:System.Collections.Generic.Dictionary`2" />) provide a struct-based enumerator type
+             (e.g. <see cref="T:System.Collections.Generic.Dictionary`2.Enumerator" />) which the compiler can use in <see langword="foreach" /> statements.
+             When using a struct-based enumerator, no heap allocation occurs during such enumeration.
+             This is in contrast to the interface-based enumerator <see cref="T:System.Collections.Generic.IEnumerator`1" /> which will
+             always be allocated on the heap.
+             </para>
+             <para>
+             This method returns a custom struct enumerator that will avoid any heap allocation if <paramref name="dictionary" />
+             (which is declared via interface <see cref="T:System.Collections.Generic.IEnumerable`1" />) is actually of known concrete type that
+             provides its own struct enumerator. If so, it delegates to that type's enumerator without any boxing
+             or other heap allocation.
+             </para>
+             <para>
+             If <paramref name="dictionary" /> is not of a known concrete type, the returned enumerator falls back to the
+             interface-based enumerator, which will be allocated on the heap. Benchmarking shows the overhead in
+             such cases is low enough to be within the measurement error, meaning this is an inexpensive optimization
+             that won't regress behavior and with low downside for cases where it cannot apply an optimization.
+             </para>
+             </remarks>
+             <example>
+             <code>
+             <![CDATA[IDictionary<string, string> dictionary = ...;
+            
+             foreach ((string key, string value) in dictionary.NoAllocEnumerate())
+             {
+                 // ...
+             }]]>
+             </code>
+             </example>
+        </member>
+        <member name="T:NuGet.NoAllocEnumerateExtensions.OptimisticallyNonAllocatingDictionaryEnumerable`2">
+            <summary>
+            Provides a struct-based enumerator for use with <see cref="T:System.Collections.Generic.IDictionary`2" />.
+            Do not use this type directly. Use <see cref="M:NuGet.NoAllocEnumerateExtensions.NoAllocEnumerate``2(System.Collections.Generic.IDictionary{``0,``1})" /> instead.
+            </summary>
+        </member>
+        <member name="T:NuGet.NoAllocEnumerateExtensions.OptimisticallyNonAllocatingDictionaryEnumerable`2.Enumerator">
+            <summary>
+            A struct-based enumerator for use with <see cref="T:System.Collections.Generic.IEnumerable`1" />.
+            Do not use this type directly. Use <see cref="M:NuGet.NoAllocEnumerateExtensions.NoAllocEnumerate``2(System.Collections.Generic.IDictionary{``0,``1})" /> instead.
+            </summary>
+        </member>
+        <member name="T:NuGet.StringBuilderPool">
+            <summary>
+            Provides a resource pool that enables reusing instances of <see cref="T:System.Text.StringBuilder" /> instances.
+            </summary>
+            <remarks>
+            <para>
+            Renting and returning buffers with an <see cref="T:NuGet.StringBuilderPool" /> can increase performance
+            in situations where <see cref="T:System.Text.StringBuilder" /> instances are created and destroyed frequently,
+            resulting in significant memory pressure on the garbage collector.
+            </para>
+            <para>
+            This class is thread-safe.  All members may be used by multiple threads concurrently.
+            </para>
+            </remarks>
+        </member>
+        <member name="F:NuGet.StringBuilderPool.Shared">
+            <summary>
+            Retrieves a shared <see cref="T:NuGet.StringBuilderPool" /> instance.
+            </summary>
+        </member>
+        <member name="M:NuGet.StringBuilderPool.Rent(System.Int32)">
+            <summary>
+            Retrieves a <see cref="T:System.Text.StringBuilder" /> that is at least the requested length.
+            </summary>
+            <param name="minimumCapacity">The minimum capacity of the <see cref="T:System.Text.StringBuilder" /> needed.</param>
+            <returns>
+            A <see cref="T:System.Text.StringBuilder" /> that is at least <paramref name="minimumCapacity" /> in length.
+            </returns>
+            <remarks>
+            This buffer is loaned to the caller and should be returned to the same pool via
+            <see cref="M:NuGet.StringBuilderPool.ToStringAndReturn(System.Text.StringBuilder)" /> so that it may be reused in subsequent usage of <see cref="M:NuGet.StringBuilderPool.Rent(System.Int32)" />.
+            It is not a fatal error to not return a rented string builder, but failure to do so may lead to
+            decreased application performance, as the pool may need to create a new instance to replace
+            the one lost.
+            </remarks>
+        </member>
+        <member name="M:NuGet.StringBuilderPool.ToStringAndReturn(System.Text.StringBuilder)">
+            <summary>
+            Returns to the pool an array that was previously obtained via <see cref="M:NuGet.StringBuilderPool.Rent(System.Int32)" /> on the same
+            <see cref="T:NuGet.StringBuilderPool" /> instance, returning the built string.
+            </summary>
+            <param name="builder">
+            The <see cref="T:System.Text.StringBuilder" /> previously obtained from <see cref="M:NuGet.StringBuilderPool.Rent(System.Int32)" /> to return to the pool.
+            </param>
+            <remarks>
+            Once a <see cref="T:System.Text.StringBuilder" /> has been returned to the pool, the caller gives up all ownership
+            of the instance and must not use it. The reference returned from a given call to <see cref="M:NuGet.StringBuilderPool.Rent(System.Int32)" />
+            must only be returned via <see cref="M:NuGet.StringBuilderPool.ToStringAndReturn(System.Text.StringBuilder)" /> once.  The default <see cref="T:NuGet.StringBuilderPool" />
+            may hold onto the returned instance in order to rent it again, or it may release the returned instance
+            if it's determined that the pool already has enough instances stored.
+            </remarks>
+            <returns>The string, built from <paramref name="builder" />.</returns>
+        </member>
+        <member name="T:System.Runtime.CompilerServices.RequiredMemberAttribute">
+            <summary>Specifies that a type has required members or that a member is required.</summary>
+        </member>
+        <member name="T:System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute">
+            <summary>
+            Indicates that compiler support for a particular feature is required for the location where this attribute is applied.
+            </summary>
+        </member>
+        <member name="P:System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.FeatureName">
+            <summary>
+            The name of the compiler feature.
+            </summary>
+        </member>
+        <member name="P:System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.IsOptional">
+            <summary>
+            If true, the compiler can choose to allow access to the location where this attribute is applied if it does not understand <see cref="P:System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.FeatureName" />.
+            </summary>
+        </member>
+        <member name="F:System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.RefStructs">
+            <summary>
+            The <see cref="P:System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.FeatureName" /> used for the ref structs C# feature.
+            </summary>
+        </member>
+        <member name="F:System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.RequiredMembers">
+            <summary>
+            The <see cref="P:System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.FeatureName" /> used for the required members C# feature.
+            </summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.AllowNullAttribute">
+            <summary>Specifies that null is allowed as an input even if the corresponding type disallows it.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.DisallowNullAttribute">
+            <summary>Specifies that null is disallowed as an input even if the corresponding type allows it.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.MaybeNullAttribute">
+            <summary>Specifies that an output may be null even if the corresponding type disallows it.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.NotNullAttribute">
+            <summary>Specifies that an output will not be null even if the corresponding type allows it. Specifies that an input argument was not null when the call returns.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute">
+            <summary>Specifies that when a method returns <see cref="P:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.ReturnValue" />, the parameter may be null even if the corresponding type disallows it.</summary>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.#ctor(System.Boolean)">
+            <summary>Initializes the attribute with the specified return value condition.</summary>
+            <param name="returnValue">
+            The return value condition. If the method returns this value, the associated parameter may be null.
+            </param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.ReturnValue">
+            <summary>Gets the return value condition.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute">
+            <summary>Specifies that when a method returns <see cref="P:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.ReturnValue" />, the parameter will not be null even if the corresponding type allows it.</summary>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor(System.Boolean)">
+            <summary>Initializes the attribute with the specified return value condition.</summary>
+            <param name="returnValue">
+            The return value condition. If the method returns this value, the associated parameter will not be null.
+            </param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.ReturnValue">
+            <summary>Gets the return value condition.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute">
+            <summary>Specifies that the output will be non-null if the named parameter is non-null.</summary>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute.#ctor(System.String)">
+            <summary>Initializes the attribute with the associated parameter name.</summary>
+            <param name="parameterName">
+            The associated parameter name.  The output will be non-null if the argument to the parameter specified is non-null.
+            </param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute.ParameterName">
+            <summary>Gets the associated parameter name.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute">
+            <summary>Applied to a method that will never return under any circumstance.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute">
+            <summary>Specifies that the method will not return if the associated Boolean parameter is passed the specified value.</summary>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute.#ctor(System.Boolean)">
+            <summary>Initializes the attribute with the specified parameter value.</summary>
+            <param name="parameterValue">
+            The condition parameter value. Code after the method will be considered unreachable by diagnostics if the argument to
+            the associated parameter matches this value.
+            </param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute.ParameterValue">
+            <summary>Gets the condition parameter value.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute">
+            <summary>Specifies that the method or property will ensure that the listed field and property members have not-null values.</summary>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.#ctor(System.String)">
+            <summary>Initializes the attribute with a field or property member.</summary>
+            <param name="member">
+            The field or property member that is promised to be not-null.
+            </param>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.#ctor(System.String[])">
+            <summary>Initializes the attribute with the list of field and property members.</summary>
+            <param name="members">
+            The list of field and property members that are promised to be not-null.
+            </param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.Members">
+            <summary>Gets field or property member names.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute">
+            <summary>Specifies that the method or property will ensure that the listed field and property members have not-null values when returning with the specified return value condition.</summary>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.#ctor(System.Boolean,System.String)">
+            <summary>Initializes the attribute with the specified return value condition and a field or property member.</summary>
+            <param name="returnValue">
+            The return value condition. If the method returns this value, the associated parameter will not be null.
+            </param>
+            <param name="member">
+            The field or property member that is promised to be not-null.
+            </param>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.#ctor(System.Boolean,System.String[])">
+            <summary>Initializes the attribute with the specified return value condition and list of field and property members.</summary>
+            <param name="returnValue">
+            The return value condition. If the method returns this value, the associated parameter will not be null.
+            </param>
+            <param name="members">
+            The list of field and property members that are promised to be not-null.
+            </param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.ReturnValue">
+            <summary>Gets the return value condition.</summary>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.Members">
+            <summary>Gets field or property member names.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute">
+            <summary>
+            Specifies that this constructor sets all required members for the current type, and callers
+            do not need to set any required members themselves.
+            </summary>
+        </member>
+    </members>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><DigestValue>Lc0xLooyHqg+j2zyp0nwKxPNnohgOTtL2Yrrv0JkTq4=</DigestValue></Reference></SignedInfo><SignatureValue>mFzzgOP/927r+Gg5o9PUBsQqy+ZwkKw5bKjNw1QVtrSQ9/plxw/bE2J0o798AuWg9vTl1hH7XWd6QD7HuJvYJOdHSniWJC94/Nr3OVE/wQv68Qn/w59VeIYcMseXVZfC7Cw9/uzAOOfCkDoYDzZ1htMUIEMjaE/jF/YvXek5KcTcJDcYKg/pomYHlBZHPs5Xf5zT/wifBLSAn7a7qeJoXqpqs2q447k++gNbO1B2uxXsNGvRBq5E6yeJ+R5cS1HfYv7xeaDfsfdrrylx+yDxjfoMG8lWgwy0dzig58WpznkM9BphWnM7rdtdNXU4s2zVGcPGFmZdZ9kQ0BUHsCSibQ==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>7XpKjCg5837MnNU9UKR3xba/q5Iq/JXcyzypjF20Q6LlVwLLwX3ehPNrT4+GM2kpbhg0KF9zaTCqKCnlRY4zUat+8sk/4dUEyzAfHaZrGf+9FDPlP7GMb7dT1lsS4zDSF6swfD4xuoux9mBYJOGDoXxknpL581td3SwLX4w9MIsERD7wjZYpUc+16BXXuSjtNXhYlnrXoePKlDqlGgJCM5wuFwd7BXdS1lJrqVxytOUHyUpp3ovamSQWE7fGYQKxg4e50J/mNYzgN6AYglCeJ9QjGlnQ4a4HTLrtNuqFgG3wt6a6pFJ/C1qdvB/tki3rTRuSkGWcL8t2XJ+/j0BpeQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>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</X509Certificate><X509Certificate>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</X509Certificate><X509Certificate>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</X509Certificate></X509Data></KeyInfo><Object Id="ts-countersig"><X509Data><X509Certificate>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</X509Certificate><X509Certificate>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</X509Certificate></X509Data><CounterSignature ts-format="cms-timestamp-message" xmlns="http://schemas.microsoft.com/xmldsig/timestamp/2003">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</CounterSignature></Object></Signature></doc>
