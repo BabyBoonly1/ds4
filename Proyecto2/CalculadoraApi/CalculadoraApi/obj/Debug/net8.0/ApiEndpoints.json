@@ -1,0 +1,123 @@
+[
+  {
+    "ContainingType": "CalculadoraApi.Controllers.CalculosCotroller",
+    "Method": "GetCalculos",
+    "RelativePath": "api/CalculosCotroller",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CalculadoraApi.Models.Calculo, CalculadoraApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CalculadoraApi.Controllers.CalculosCotroller",
+    "Method": "GetDivisiones",
+    "RelativePath": "api/CalculosCotroller/divisiones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CalculadoraApi.Models.Calculo, CalculadoraApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CalculadoraApi.Controllers.CalculosCotroller",
+    "Method": "GetMultiplicaciones",
+    "RelativePath": "api/CalculosCotroller/multiplicaciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CalculadoraApi.Models.Calculo, CalculadoraApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CalculadoraApi.Controllers.CalculosCotroller",
+    "Method": "GetRestas",
+    "RelativePath": "api/CalculosCotroller/restas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CalculadoraApi.Models.Calculo, CalculadoraApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CalculadoraApi.Controllers.CalculosCotroller",
+    "Method": "GetSumas",
+    "RelativePath": "api/CalculosCotroller/sumas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CalculadoraApi.Models.Calculo, CalculadoraApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CalculadoraApi.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CalculadoraApi.WeatherForecast, CalculadoraApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

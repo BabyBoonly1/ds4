@@ -1,0 +1,61 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\benja\\source\\repos\\ds4\\Laboratorio13\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{972B5058-6138-4ADA-B9E9-460AD2B97585}|Laboratorio13\\Laboratorio13.csproj|c:\\users\\benja\\source\\repos\\ds4\\laboratorio13\\laboratorio13\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{972B5058-6138-4ADA-B9E9-460AD2B97585}|Laboratorio13\\Laboratorio13.csproj|solutionrelative:laboratorio13\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{972B5058-6138-4ADA-B9E9-460AD2B97585}|Laboratorio13\\Laboratorio13.csproj|c:\\users\\benja\\source\\repos\\ds4\\laboratorio13\\laboratorio13\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{972B5058-6138-4ADA-B9E9-460AD2B97585}|Laboratorio13\\Laboratorio13.csproj|solutionrelative:laboratorio13\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\benja\\source\\repos\\ds4\\Laboratorio13\\Laboratorio13\\Form1.cs",
+              "RelativeDocumentMoniker": "Laboratorio13\\Form1.cs",
+              "ToolTip": "C:\\Users\\benja\\source\\repos\\ds4\\Laboratorio13\\Laboratorio13\\Form1.cs",
+              "RelativeToolTip": "Laboratorio13\\Form1.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAmwDkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T22:40:50.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\benja\\source\\repos\\ds4\\Laboratorio13\\Laboratorio13\\Form1.cs",
+              "RelativeDocumentMoniker": "Laboratorio13\\Form1.cs",
+              "ToolTip": "C:\\Users\\benja\\source\\repos\\ds4\\Laboratorio13\\Laboratorio13\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Laboratorio13\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T22:39:51.135Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
